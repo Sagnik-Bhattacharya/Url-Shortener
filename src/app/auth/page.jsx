@@ -1,9 +1,9 @@
-import LandingPage from '@/components/HomePage'
+import AuthPage from '@/components/AuthTabs'
 import React from 'react'
 
 const page = () => {
   return (
-    <LandingPage />
+    <AuthPage />
   )
 }
 

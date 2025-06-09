@@ -1,36 +1,67 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Url-Shortener
+
+Url-Shortener is a full-featured URL shortening service built with Next.js, React, MongoDB, and TailwindCSS. It provides a simple and elegant interface to create short URLs that redirect to original long URLs. Users can register, log in, manage their short links, track clicks, generate QR codes, and copy short URLs easily.
+
+## Features
+
+- User authentication with JWT and secure password hashing
+- Create, edit, and delete short URLs
+- Set expiry for URLs (optional)
+- Click tracking for each short URL
+- Generate QR codes for short URLs
+- Copy short URLs to clipboard with one click
+- Responsive and modern UI with TailwindCSS and Framer Motion animations
+- Easy-to-use dashboard for link management
+
+## Tech Stack
+
+- Frontend: Next.js (React), TailwindCSS, Framer Motion
+- Backend: Next.js API routes, MongoDB, Mongoose
+- Authentication: JWT, bcryptjs
+- Notifications: react-hot-toast
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
-```bash
+- Node.js >= 16.x
+- MongoDB Atlas or local MongoDB instance
+- (Optional) .env file for environment variables
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Sagnik-Bhattacharya/Url-Shortener.git
+   cd Url-Shortener
+Install dependencies:
+
+bash
+Copy
+Edit
+npm install
+Create a .env file in the root directory with the following environment variables:
+
+ini
+Copy
+Edit
+MONGODB_URI=your_mongodb_connection_string
+JWT_SECRET=your_jwt_secret
+BASE_URL=http://localhost:3000
+Run the development server:
+
+bash
+Copy
+Edit
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Open http://localhost:3000 in your browser.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Usage
+Register a new account or log in.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+Create new short URLs by entering the original long URL.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Manage your links from the dashboard: edit, delete, view click stats, and generate/download QR codes.
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Click the "Copy URL" button to copy the shortened link to your clipboard.
+Made with ❤️ by Sagnik-Bhattacharya
