@@ -64,4 +64,4 @@ Create new short URLs by entering the original long URL.
 Manage your links from the dashboard: edit, delete, view click stats, and generate/download QR codes.
 
 Click the "Copy URL" button to copy the shortened link to your clipboard.
-Made with ❤️ by Sagnik-Bhattacharya
+This project was built by Sagnik Bhattacharya with assistance from AI tools like Claude.
