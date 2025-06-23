@@ -19,7 +19,7 @@ export default function AuthPage() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2, duration: 0.5 }}
         >
-          Welcome to URLify
+          Welcome to URL Shortener
         </motion.h1>
 
         <Tabs defaultValue="login" className="w-full">
